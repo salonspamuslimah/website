@@ -74,7 +74,7 @@ const Location = () => {
 
               <div className="mt-6 flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=No+81+A+Jl.+Cihanjuang+Cibabat+Cimahi+Utara"
+                  href="https://maps.app.goo.gl/VQBXm63aVXq9PhPy7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-2 bg-rose-600 text-white px-6 py-3 rounded-full hover:bg-rose-700 transition-colors font-semibold"
