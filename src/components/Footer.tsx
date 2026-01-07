@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://instagram.com/sofiaazzahra.salon"
+                href="https://www.instagram.com/sazsalonspa/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-rose-600 rounded-full flex items-center justify-center hover:bg-rose-700 transition-colors"
@@ -110,13 +110,13 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20minta%20pricelist"
+                  href="https://drive.google.com/file/d/1Bna9UFaBdVPjbfseJHtVVOEDVD-fqAKj/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-rose-400 hover:text-rose-300 transition-colors"
                 >
                   <Download className="w-4 h-4" />
-                  Download Pricelist
+                  Lihat Full Pricelist
                 </a>
               </li>
             </ul>
