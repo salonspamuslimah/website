@@ -1,4 +1,4 @@
-import { Scissors, Flower2, Sparkles, Wind, PackageOpen, ExternalLink } from 'lucide-react';
+import { Scissors, Flower2, Sparkles, Wind, PackageOpen, ExternalLink, Baby } from 'lucide-react';
 
 const TreatmentCategories = () => {
   const categories = [
@@ -10,12 +10,24 @@ const TreatmentCategories = () => {
       color: 'bg-rose-100',
       iconColor: 'text-rose-600',
       treatments: [
-        'Haircut & Styling',
+        'Haircut (Potong Rambut)',
+        'Hairwash & Dry',
+        'Hair Variasi (Styling)',
         'Creambath Tradisional',
-        'Hair Mask & Hair Spa',
-        'Coloring, Highlight, Balayage',
-        'Smoothing & Keratin',
-        'Anti-Hairfall & Anti-Dandruff'
+        'Hair Mask',
+        'Hair Spa',
+        'Coloring (Short/Medium/Long)',
+        'Highlight, Lowlight & Balayage',
+        'Coloring & Bleaching',
+        'Bleaching',
+        'Coloring Peek A Boo',
+        'Smoothing',
+        'Keratin Treatment',
+        'Infus Keratin',
+        'Toning',
+        'Perawatan Rambut Ketombe',
+        'Perawatan Rambut Rontok',
+        'Perming'
       ],
     },
     {
@@ -26,12 +38,20 @@ const TreatmentCategories = () => {
       color: 'bg-amber-100',
       iconColor: 'text-amber-600',
       treatments: [
-        'Full Body Massage',
-        'Hot Stone Massage',
-        'Body Scrub & Body Spa',
         'Back Massage',
-        'Reflexology',
-        'RF Lipo Slimming'
+        'Back Massage Hot Stone',
+        'Back Scrub',
+        'Full Body Massage (60/90/120 menit)',
+        'Full Body Massage Hot Stone',
+        'Full Body Massage Scrub',
+        'Full Body Spa (150 menit)',
+        'Full Body Scrub',
+        'Reflexology (Pijat Kaki)',
+        'Reflexology Hot Stone',
+        'Foot Scrub',
+        'RF Lipo Perut',
+        'RF Lipo Lengan',
+        'RF Lipo Paha'
       ],
     },
     {
@@ -43,8 +63,9 @@ const TreatmentCategories = () => {
       iconColor: 'text-stone-700',
       treatments: [
         'Facial + Totok Wajah',
-        'Facial Detox',
-        'Facial + Hot Stone',
+        'Facial + Totok Wajah + Hot Stone',
+        'Facial Detox Wajah',
+        'Facial + Totok Wajah + Detox',
         'RF Lipo Wajah',
         'RF Lipo Double Chin'
       ],
@@ -57,10 +78,10 @@ const TreatmentCategories = () => {
       color: 'bg-rose-200',
       iconColor: 'text-rose-700',
       treatments: [
-        'Armpit Waxing',
-        'Hand Waxing',
-        'Foot Waxing',
-        'Combination Waxing'
+        'Armpit Waxing (Ketiak)',
+        'Hand Waxing (Tangan)',
+        'Foot Waxing (Kaki)',
+        'Combination Waxing (All)'
       ],
     },
     {
@@ -72,14 +93,71 @@ const TreatmentCategories = () => {
       iconColor: 'text-amber-700',
       treatments: [
         'Haircut + Creambath',
-        'Full Body Spa + Manipadi',
-        'Full Body Massage + Ratus',
-        'Creambath + Facial',
+        'Haircut + Hair Mask',
+        'Haircut + Hair Spa',
+        'Creambath + Facial Totok',
+        'Hair Mask + Facial Totok',
+        'Hair Spa + Facial Totok',
+        'Creambath + Reflexology',
+        'Hair Mask + Reflexology',
         'Hair Spa + Reflexology',
+        'Creambath + Manipadi',
+        'Hair Mask + Manipadi',
+        'Hair Spa + Manipadi',
+        'Hair Spa + Perawatan Rambut Rontok',
+        'Creambath + Perawatan Rambut Ketombe',
+        'Creambath + Facial Detox',
+        'Back Massage + Manipadi',
+        'Full Body Scrub + Ratus Miss V',
+        'Full Body Scrub + Manipadi',
+        'Full Body Massage + Breast + Ratus',
+        'Full Body Spa + Manipadi',
+        'Full Body Spa + Hair Spa + Breast + Miss V + Manipadi',
+        'Haircut + Full Body Spa + Manipadi',
+        'Haircut + Totok Wajah',
+        'Haircut + Perawatan Rambut Rontok',
+        'Full Body Scrub + Totok Wajah',
+        'Reflexology + Foot Scrub',
+        'Back Scrub + Reflexology',
+        'Back Massage + Reflexology',
         'And many more...'
       ],
     },
+    {
+      icon: Baby,
+      title: 'Kids Treatment',
+      description: 'Perawatan khusus untuk anak-anak (under 12 tahun)',
+      startingPrice: '40k',
+      color: 'bg-rose-100',
+      iconColor: 'text-rose-600',
+      treatments: [
+        'Haircut Kids',
+        'Creambath Tradisional Kids',
+        'Haircut + Creambath Kids',
+        'Creambath + Manipadi Kids',
+        'Manipadi Kids'
+      ],
+    },
   ];
+
+  const additionalTreatments = {
+    title: 'Additional Treatment',
+    items: [
+      'Breast Massage',
+      'Ear Candle',
+      'Manicure',
+      'Pedicure',
+      'Manipadi Cure',
+      'Sauna',
+      'Ratus Miss V',
+      'Bathub',
+      'Kuteks Halal',
+      'Hair Mask Instan',
+      'Hair Vitamin',
+      'Curly Style',
+      'Body Scraping (Kerokan)'
+    ]
+  };
 
   const handleViewPricelist = () => {
     window.open('https://drive.google.com/file/d/1Bna9UFaBdVPjbfseJHtVVOEDVD-fqAKj/view?usp=drivesdk', '_blank');
@@ -97,6 +175,7 @@ const TreatmentCategories = () => {
           </p>
         </div>
 
+        {/* Main Categories */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {categories.map((category, index) => (
             <div
@@ -117,21 +196,41 @@ const TreatmentCategories = () => {
               <p className="text-rose-600 font-semibold mb-4">
                 from IDR {category.startingPrice}
               </p>
-              <ul className="space-y-2">
-                {category.treatments.map((treatment, idx) => (
-                  <li
-                    key={idx}
-                    className="text-gray-600 text-sm flex items-center"
-                  >
-                    <span className="w-1.5 h-1.5 bg-rose-600 rounded-full mr-2"></span>
-                    {treatment}
-                  </li>
-                ))}
-              </ul>
+              <div className="max-h-64 overflow-y-auto pr-2">
+                <ul className="space-y-2">
+                  {category.treatments.map((treatment, idx) => (
+                    <li
+                      key={idx}
+                      className="text-gray-600 text-sm flex items-start"
+                    >
+                      <span className="w-1.5 h-1.5 bg-rose-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                      <span>{treatment}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
 
+        {/* Additional Treatments Section */}
+        <div className="bg-gradient-to-br from-stone-50 to-rose-50 rounded-2xl p-8 mb-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            ✨ {additionalTreatments.title}
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {additionalTreatments.items.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow"
+              >
+                <p className="text-gray-700 text-sm font-medium">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA Button */}
         <div className="text-center space-y-2">
           <button
             onClick={handleViewPricelist}
