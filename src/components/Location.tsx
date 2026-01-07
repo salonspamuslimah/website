@@ -83,7 +83,7 @@ const Location = () => {
                   Get Directions
                 </a>
                 <a
-                  href="https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20booking%20treatment"
+                  href="https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20booking%20treatment"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-rose-600 border-2 border-rose-600 px-6 py-3 rounded-full hover:bg-rose-50 transition-colors font-semibold"
