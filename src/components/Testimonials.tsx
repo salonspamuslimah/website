@@ -3,40 +3,40 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: 'Tempatnya nyaman banget, privacy terjaga. Staffnya ramah dan profesional. Treatment body massage-nya juara!',
-      name: 'Siti Nurhaliza',
-      instagram: '@siti.nurh',
+      name: '@aulliafirdaus',
+      instagram: '@aulliafirdaus',
       rating: 5,
+      text: 'rekomen bgt pls!! semua cewe wajib kesini, murah, pelayananya enak, free bandrek🔝🔝',
     },
     {
-      text: 'Akhirnya nemu salon muslimah yang bener-bener private. Bisa lepas hijab dengan tenang. Hair spa-nya recommended!',
-      name: 'Aisha Kamila',
-      instagram: '@aisha.k',
+      name: '@bymoondaisy',
+      instagram: '@bymoondaisy',
       rating: 5,
+      text: 'beneran recommend bangett tempatnya nyaman pelayanannya juga bagus, pgn kesana lagii🥺💗',
     },
     {
-      text: 'Harga affordable, hasil memuaskan. Facial totok-nya bikin wajah glowing. Minuman tradisionalnya juga enak!',
-      name: 'Fatimah Az Zahra',
-      instagram: '@fatimah.zhr',
+      name: 'Poppy Hassan',
+      instagram: '@Poppy Hassan',
       rating: 5,
+      text: 'salon khusus cewek yg rekomen bgt menurut aku! tempatnya nyaman, pelayanan oke, free minuman hangat juga. pkonya cocok bgt buat wanita yg berhijab💖',
     },
     {
-      text: 'Paket pre-wedding-nya lengkap banget. Dari rambut, wajah, sampai body treatment. Puas banget sama hasilnya!',
-      name: 'Dina Mariana',
-      instagram: '@dina.m',
+      name: 'Naima Khoirun Nissa',
+      instagram: '@Naima Khoirun Nissa',
       rating: 5,
+      text: 'nyaman sekali, suka dapet minuman tradisional😊 hasil nya memuaskan, teteh teteh nya ramah baik sangat dan cantik cantik masyaallah. BENER BENER PRIVATE BANGET BEST POKOKNYA MWAH 💋😻',
     },
     {
-      text: 'Ruangannya bersih, adem, dan wangi. Treatment-nya profesional. Jadi langganan deh setiap bulan ke sini!',
-      name: 'Rania Putri',
-      instagram: '@rania.ptr',
+      name: 'Nayla Almaz Zahra',
+      instagram: '@Nayla Almaz Zahra',
       rating: 5,
+      text: 'bestt banget, teteh teteh nya super duper ramah, baik sekali, cantik cantik lagi. PRIVATE SEKALI BENER BENER DIBUAT NYAMAN. PIJATAN NYA ENAKEN SEKALI BIKIN CANDU UHUY 😍🤩🤩',
     },
     {
-      text: 'Pelayanannya ramah, tempatnya cozy. RF lipo slimming-nya efektif banget. Recommended for muslimah!',
-      name: 'Zahra Amalia',
-      instagram: '@zahra.aml',
+      name: 'Farahh',
+      instagram: '@Farahh',
       rating: 5,
+      text: 'salon muslimah ternyaman yg pernah aku datengin. suasana salonnya adem, sepi, dan bersih pastinya. oh iya wangi juga. semua staf disana ramah-ramah. aku td juga disuguhi bajigur. satu lg sih point plusnya, dr segi harga ini tuh affordable bgt. bakal jd salon langganan aku deh dr skrg',
     },
   ];
 
