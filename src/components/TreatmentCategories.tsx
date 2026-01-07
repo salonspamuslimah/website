@@ -134,10 +134,11 @@ const TreatmentCategories = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center space-y-2">
-          <button
-            onClick={handleDownloadPricelist}
+        <div className="text-center">
+          <a
+            href="https://drive.google.com/file/d/1Bna9UFaBdVPjbfseJHtVVOEDVD-fqAKj/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-rose-600 text-white px-8 py-4 rounded-full hover:bg-rose-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
           >
             <Download className="w-5 h-5" />
