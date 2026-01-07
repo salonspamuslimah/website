@@ -142,10 +142,10 @@ const TreatmentCategories = () => {
             className="inline-flex items-center gap-2 bg-rose-600 text-white px-8 py-4 rounded-full hover:bg-rose-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
           >
             <Download className="w-5 h-5" />
-            Download Full Pricelist (PDF)
+            Lihat Full Pricelist (Click Disini)
           </button>
           <p className="text-sm text-gray-500">
-            Complete pricelist dengan detail semua treatment
+            Semua pricelist dengan detail semua treatment
           </p>
         </div>
       </div>
