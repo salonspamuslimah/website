@@ -1,4 +1,4 @@
-import { Scissors, Flower2, Sparkles, Wind, PackageOpen, Download } from 'lucide-react';
+import { Scissors, Flower2, Sparkles, Wind, PackageOpen, ExternalLink } from 'lucide-react';
 
 const TreatmentCategories = () => {
   const categories = [
@@ -81,11 +81,8 @@ const TreatmentCategories = () => {
     },
   ];
 
-  const handleDownloadPricelist = () => {
-    const link = document.createElement('a');
-    link.href = '/PRICELIST-AGT-2025.pdf';
-    link.download = 'Sofia_Az_Zahra_Pricelist.pdf';
-    link.click();
+  const handleViewPricelist = () => {
+    window.open('https://drive.google.com/file/d/1Bna9UFaBdVPjbfseJHtVVOEDVD-fqAKj/view?usp=drivesdk', '_blank');
   };
 
   return (
@@ -134,14 +131,13 @@ const TreatmentCategories = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <a
-            href="https://drive.google.com/file/d/1Bna9UFaBdVPjbfseJHtVVOEDVD-fqAKj/view?usp=drivesdk"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <div className="text-center space-y-2">
+          <button
+            onClick={handleViewPricelist}
             className="inline-flex items-center gap-2 bg-rose-600 text-white px-8 py-4 rounded-full hover:bg-rose-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
           >
-            <Download className="w-5 h-5" />
+            <ExternalLink className="w-5 h-5" />
             Lihat Full Pricelist (Click Disini)
           </button>
           <p className="text-sm text-gray-500">
