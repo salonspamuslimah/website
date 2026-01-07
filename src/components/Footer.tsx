@@ -110,7 +110,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20minta%20pricelist"
+                  href="https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20minta%20pricelist"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-rose-400 hover:text-rose-300 transition-colors"

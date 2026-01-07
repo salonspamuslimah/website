@@ -95,7 +95,7 @@ const FAQ = () => {
             Jangan ragu untuk menghubungi kami via WhatsApp
           </p>
           <a
-            href="https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20bertanya"
+            href="https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20bertanya"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition-all transform hover:scale-105 font-semibold shadow-lg"

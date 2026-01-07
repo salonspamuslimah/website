@@ -5,79 +5,88 @@ const TreatmentCategories = () => {
     {
       icon: Scissors,
       title: 'Hair Care',
+      description: 'Complete hair treatments untuk kesehatan rambutmu',
       startingPrice: '35k',
       color: 'bg-rose-100',
       iconColor: 'text-rose-600',
       treatments: [
-        'Haircut',
-        'Hair Wash & Blow',
-        'Hair Creambath',
-        'Hair Spa',
-        'Hair Coloring',
-        'Hair Smoothing',
+        'Haircut & Styling',
+        'Creambath Tradisional',
+        'Hair Mask & Hair Spa',
+        'Coloring, Highlight, Balayage',
+        'Smoothing & Keratin',
+        'Anti-Hairfall & Anti-Dandruff'
       ],
     },
     {
       icon: Flower2,
       title: 'Body Treatment',
+      description: 'Relaksasi total untuk tubuh yang lelah',
       startingPrice: '55k',
       color: 'bg-amber-100',
       iconColor: 'text-amber-600',
       treatments: [
-        'Body Massage',
-        'Body Scrub',
-        'Body Mask',
+        'Full Body Massage',
         'Hot Stone Massage',
-        'Aromatherapy',
-        'RF Lipo Slimming',
+        'Body Scrub & Body Spa',
+        'Back Massage',
+        'Reflexology',
+        'RF Lipo Slimming'
       ],
     },
     {
       icon: Sparkles,
       title: 'Face Treatment',
+      description: 'Perawatan wajah untuk kulit glowing',
       startingPrice: '40k',
       color: 'bg-stone-200',
       iconColor: 'text-stone-700',
       treatments: [
-        'Facial Acne',
-        'Facial Brightening',
-        'Facial Anti-Aging',
-        'Facial Totok',
-        'Face Mask',
-        'Eye Treatment',
+        'Facial + Totok Wajah',
+        'Facial Detox',
+        'Facial + Hot Stone',
+        'RF Lipo Wajah',
+        'RF Lipo Double Chin'
       ],
     },
     {
       icon: Wind,
       title: 'Waxing',
+      description: 'Hair removal yang aman dan nyaman',
       startingPrice: '60k',
       color: 'bg-rose-200',
       iconColor: 'text-rose-700',
       treatments: [
-        'Full Body Waxing',
-        'Half Body Waxing',
-        'Arms Waxing',
-        'Legs Waxing',
-        'Underarms Waxing',
-        'Bikini Line Waxing',
+        'Armpit Waxing',
+        'Hand Waxing',
+        'Foot Waxing',
+        'Combination Waxing'
       ],
     },
     {
       icon: PackageOpen,
       title: 'Combo Packages',
+      description: 'Paket kombinasi hemat dan praktis',
       startingPrice: '145k',
       color: 'bg-amber-200',
       iconColor: 'text-amber-700',
       treatments: [
-        'Hair Spa + Facial',
-        'Body Massage + Scrub',
-        'Full Body Spa',
-        'Pre-Wedding Package',
-        'Bridal Package',
-        'Monthly Self-Care',
+        'Haircut + Creambath',
+        'Full Body Spa + Manipadi',
+        'Full Body Massage + Ratus',
+        'Creambath + Facial',
+        'Hair Spa + Reflexology',
+        'And many more...'
       ],
     },
   ];
+
+  const handleDownloadPricelist = () => {
+    const link = document.createElement('a');
+    link.href = '/PRICELIST-AGT-2025-1-_compressed.pdf';
+    link.download = 'Sofia_Az_Zahra_Pricelist.pdf';
+    link.click();
+  };
 
   return (
     <section id="treatments" className="py-20 bg-white">
@@ -87,7 +96,7 @@ const TreatmentCategories = () => {
             Our <span className="text-rose-600">Treatment Categories</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Berbagai pilihan perawatan profesional untuk kebutuhan Anda
+            Pilih dari berbagai kategori treatment yang kami tawarkan
           </p>
         </div>
 
@@ -105,6 +114,9 @@ const TreatmentCategories = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {category.title}
               </h3>
+              <p className="text-gray-600 text-sm mb-4">
+                {category.description}
+              </p>
               <p className="text-rose-600 font-semibold mb-4">
                 from IDR {category.startingPrice}
               </p>
@@ -123,16 +135,17 @@ const TreatmentCategories = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <a
-            href="https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20minta%20pricelist%20lengkap"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="text-center space-y-2">
+          <button
+            onClick={handleDownloadPricelist}
             className="inline-flex items-center gap-2 bg-rose-600 text-white px-8 py-4 rounded-full hover:bg-rose-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
           >
             <Download className="w-5 h-5" />
             Download Full Pricelist (PDF)
-          </a>
+          </button>
+          <p className="text-sm text-gray-500">
+            Complete pricelist dengan detail semua treatment
+          </p>
         </div>
       </div>
     </section>

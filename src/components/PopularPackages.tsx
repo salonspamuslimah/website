@@ -109,7 +109,7 @@ const PopularPackages = () => {
                   </p>
                 </div>
                 <a
-                  href={`https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20booking%20${encodeURIComponent(
+                  href={`https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20booking%20${encodeURIComponent(
                     pkg.name
                   )}`}
                   target="_blank"
