@@ -27,7 +27,7 @@ const PromoBanner = () => {
           </div>
 
           <a
-            href="https://wa.me/6281235020325?text=Halo%20Sofia%20Az%20Zahra%2C%20saya%20ingin%20memanfaatkan%20promo%20diskon%2020%25"
+            href="https://wa.me/6281235020325?text=Halo%20minsaz%2C%20saya%20ingin%20memanfaatkan%20promo%20diskon%2020%25"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-rose-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-bold text-lg shadow-xl"
