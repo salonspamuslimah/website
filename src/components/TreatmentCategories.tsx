@@ -83,7 +83,7 @@ const TreatmentCategories = () => {
 
   const handleDownloadPricelist = () => {
     const link = document.createElement('a');
-    link.href = '/PRICELIST AGT 2025 (1)_compressed';
+    link.href = '/PRICELIST-AGT-2025';
     link.download = 'Sofia_Az_Zahra_Pricelist.pdf';
     link.click();
   };
