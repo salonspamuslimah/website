@@ -38,7 +38,7 @@ const FAQ = () => {
     {
       question: 'Metode pembayaran apa saja?',
       answer:
-        'Kami menerima pembayaran cash, transfer bank, QRIS, dan card (dikenakan biaya admin 1%). Pembayaran dilakukan setelah treatment selesai.',
+        'Kami menerima pembayaran cash, transfer bank, QRIS, dan card (metode pembayaran card dikenakan biaya admin 1%). Pembayaran dilakukan setelah treatment selesai.',
     },
     {
       question: 'Apakah bisa reschedule atau cancel?',
